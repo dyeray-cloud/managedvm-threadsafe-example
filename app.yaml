@@ -1,0 +1,13 @@
+runtime: custom
+vm: true
+api_version: 1
+module: threadsafe
+threadsafe: false
+
+handlers:
+- url: .*
+  script: main.app
+
+instance_class: B8
+manual_scaling:
+  instances: 1
